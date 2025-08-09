@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    
+    <link rel="icon" type="image/png" href="../../image/icon.png">
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <a href="https://t.me/nimaghaffari01" target="_blank" class="contact-link">
+        <img src="../../image/icon.png" alt="Contact Icon">
+        <span>Contact Me</span>
+    </a>
+
+    <canvas id="background-canvas"></canvas>
+
+    <div class="form-container">
+        <form id="login-form" class="form" novalidate>
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="email" id="login-email" required>
+                <label for="login-email">Email</label>
+                 <div class="error-message"></div>
+            </div>
+            <div class="input-group">
+                <input type="password" id="login-password" required>
+                <label for="login-password">Password</label>
+                 <div class="error-message"></div>
+            </div>
+            <button type="submit" id="login-btn">Log In</button>
+            <div class="form-message" id="login-form-message"></div>
+        </form>
+
+        <form id="register-form" class="form hidden" novalidate>
+            <h2>Sign Up</h2>
+            <div class="input-group">
+                <input type="text" id="register-username" required>
+                <label for="register-username">Username</label>
+                <div class="error-message"></div>
+            </div>
+            <div class="input-group">
+                <input type="email" id="register-email" required>
+                <label for="register-email">Email</label>
+                <div class="error-message"></div>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="register-phone" required>
+                <label for="register-phone">Phone Number</label>
+                <div class="error-message"></div>
+            </div>
+            <div class="input-group">
+                <input type="password" id="register-password" required>
+                <label for="register-password">Password</label>
+                <div class="error-message"></div>
+            </div>
+            <div class="input-group">
+                <input type="password" id="register-confirm-password" required>
+                <label for="register-confirm-password">Confirm Password</label>
+                <div class="error-message"></div>
+            </div>
+            <button type="submit" id="signup-btn">Sign Up</button>
+            <div class="form-message" id="register-form-message"></div>
+        </form>
+
+        <p class="form-switcher login">
+            Don't have an account? <a href="#" id="show-register-link">Sign Up</a>
+        </p>
+        <p class="form-switcher register hidden">
+            have an account? <a href="#" id="show-login-link">Login</a>
+        </p>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
